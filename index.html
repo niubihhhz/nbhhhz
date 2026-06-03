@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nbhhhz · 摄影师作品集</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">nbhhhz</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#gallery" class="nav-link">作品展示</a></li>
+                <li><a href="#contact" class="nav-link">联系方式</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 首页 / Hero -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">用镜头捕捉<br>光影的瞬间</h1>
+            <p class="hero-subtitle">Portrait · Landscape · Street Photography</p>
+            <a href="#gallery" class="btn btn-primary">浏览作品</a>
+        </div>
+        <div class="hero-scroll">
+            <span>向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT</span>
+                <h2 class="section-title">关于我</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="images/胡.jpg" alt="个人照片" class="about-photo">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>你好，我是 [你的名字]</h3>
+                    <p>我是一名自由摄影师，专注于人像与风光摄影。从拿起相机的第一天起，我就沉迷于用镜头讲述故事——那些转瞬即逝的表情、光线穿过树叶的斑驳、城市街角不经意的美。</p>
+                    <p>过去五年间，我走过了二十多个国家，为超过 300 位客户记录下他们生命中珍贵的时刻。我相信每一张照片都不只是画面，更是一段情感的凝固。</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">年经验</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">服务客户</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">踏足国家</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-title">作品展示</h2>
+                <div class="section-divider"></div>
+            </div>
+            <!-- 作品网格 -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- 作品项通过 JS 动态生成 -->
+            </div>
+            <!-- 灯箱 -->
+            <div class="lightbox" id="lightbox">
+                <span class="lightbox-close" id="lightboxClose">&times;</span>
+                <img src="" alt="" id="lightboxImg">
+                <span class="lightbox-caption" id="lightboxCaption"></span>
+                <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+                <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">联系方式</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>期待与你合作</h3>
+                    <p>无论是个人写真、婚礼纪实、商业拍摄还是风光旅拍，我都很乐意与你沟通想法，共同创作出令你满意的作品。</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>zhai.zuokun@pylontech.com.cn</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+86 17701734547</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>合肥市肥西县安徽派能</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" title="微信">WeChat</a>
+                        <a href="#" class="social-link" title="微博">Weibo</a>
+                        <a href="#" class="social-link" title="Instagram">Instagram</a>
+                        <a href="#" class="social-link" title="小红书">小红书</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" placeholder="你的名字" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <input type="text" id="subject" name="subject" placeholder="拍摄类型 / 合作意向">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言</label>
+                        <textarea id="message" name="message" rows="5" placeholder="告诉我你的想法…" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 nbhhhz · 摄影师作品集. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
